@@ -1,0 +1,15 @@
+@mixin flexcenter($justify, $align, $gap: null) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+
+  @if ($gap != null) {
+    gap: $gap;
+  }
+}
+
+@mixin breakpoint($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}

@@ -6,15 +6,24 @@
   list-style: none;
 }
 
+body {
+  background-color: rgb(63, 59, 78);
+}
+@media screen and (max-width: 900px) {
+  body {
+    background-color: #121212;
+  }
+}
+
 .nav {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
   display: flex;
   justify-content: space-between;
   padding: 16px 32px;
 }
-.nav-title {
+.nav .title {
   font-size: 30px;
-  color: olivedrab;
+  color: rgb(63, 59, 78);
 }
 .nav ul {
   display: flex;
@@ -26,5 +35,79 @@
   text-decoration: none;
 }
 .nav ul a:hover {
-  color: olivedrab;
+  color: rgb(63, 59, 78);
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.one {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+.one .column {
+  padding: 12px;
+  border: 1px solid #777;
+}
+.one .column.size-1 {
+  grid-column: span 1;
+}
+@media (max-width: 920px) {
+  .one .column.size-1 {
+    grid-column: span 4;
+  }
+}
+.one .column.size-2 {
+  grid-column: span 2;
+}
+@media (max-width: 920px) {
+  .one .column.size-2 {
+    grid-column: span 4;
+  }
+}
+.one .column.size-3 {
+  grid-column: span 3;
+}
+@media (max-width: 920px) {
+  .one .column.size-3 {
+    grid-column: span 4;
+  }
+}
+.one .column.size-4 {
+  grid-column: span 4;
+}
+@media (max-width: 920px) {
+  .one .column.size-4 {
+    grid-column: span 4;
+  }
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+footer ul a {
+  color: black;
+  text-decoration: none;
+}
+footer ul a:hover {
+  color: rgb(63, 59, 78);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }/*# sourceMappingURL=styles.css.map */

@@ -7,21 +7,22 @@
   font-family: sans-serif;
   list-style: none;
 }
+body {
+  background-color: rgb(63, 59, 78);
+  @include mixins.breakpoint(900px) {
+    background-color: #121212;
+  }
+}
 
 .nav {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
   display: flex;
   justify-content: space-between;
   padding: 16px 32px;
 
-  // vise le .dark parent direct
-  //.dark & {
-  //  background-color: #121212;
-  //}
-
-  &-title {
+  .title {
     font-size: 30px;
-    color: olivedrab;
+    color: rgb(63, 59, 78);
   }
 
   ul {
@@ -34,8 +35,55 @@
       text-decoration: none;
 
       &:hover {
-        color: olivedrab;
+        color: rgb(63, 59, 78);
       }
     }
   }
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+}
+.one {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+
+  .column {
+    padding: 12px;
+    border: 1px solid #777;
+    @for $i from 1 through 4 {
+      &.size-#{$i} {
+        grid-column: span #{$i};
+        @media (max-width: 920px) {
+          grid-column: span 4;
+        }
+      }
+    }
+  }
+}
+footer {
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+
+    a {
+      color: black;
+      text-decoration: none;
+
+      &:hover {
+        color: rgb(63, 59, 78);
+      }
+    }
+  }
+}
+.flex {
+  @include mixins.flexcenter(space-between, center, 20px);
 }
