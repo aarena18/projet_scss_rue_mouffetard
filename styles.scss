@@ -13,6 +13,25 @@ body {
     background-color: #121212;
   }
 }
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/vieux-mouf.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  .banner::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.4;
+  }
+}
 
 .nav {
   background: rgba(255, 255, 255, 0.5);
@@ -40,11 +59,7 @@ body {
     }
   }
 }
-.banner {
-  display: flex;
-  justify-content: center;
-  margin: 0 20px;
-}
+
 .one {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
