@@ -1,0 +1,41 @@
+@use "mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+}
+
+.nav {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+
+  // vise le .dark parent direct
+  //.dark & {
+  //  background-color: #121212;
+  //}
+
+  &-title {
+    font-size: 30px;
+    color: olivedrab;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+
+    a {
+      color: black;
+      text-decoration: none;
+
+      &:hover {
+        color: olivedrab;
+      }
+    }
+  }
+}
