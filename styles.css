@@ -57,44 +57,54 @@ header .nav ul a:hover {
 
 .one {
   display: grid;
-  grid-template-columns: repeat(4, 2fr);
-  gap: 2px;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas: "article articles";
 }
-.one .column {
-  padding: 12px;
-  border: 1px solid #777;
+.one .size-2 {
+  height: 300px;
+  padding: 30px;
+  background-color: #777;
+  grid-area: article;
 }
-.one .column.size-1 {
-  grid-column: span 1;
+.one .size-3 {
+  padding: 30px;
+  background-color: rgb(190, 190, 190);
+  grid-area: articles;
 }
-@media (max-width: 920px) {
-  .one .column.size-1 {
-    grid-column: span 4;
-  }
+
+.two {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas: "article articles";
 }
-.one .column.size-2 {
-  grid-column: span 2;
+.two .size-2 {
+  height: 300px;
+  padding: 30px;
+  background-color: #777;
+  grid-area: articles;
 }
-@media (max-width: 920px) {
-  .one .column.size-2 {
-    grid-column: span 4;
-  }
+.two .size-3 {
+  padding: 30px;
+  background-color: rgb(190, 190, 190);
+  grid-area: article;
 }
-.one .column.size-3 {
-  grid-column: span 3;
+
+.three {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: "texte img";
 }
-@media (max-width: 920px) {
-  .one .column.size-3 {
-    grid-column: span 4;
-  }
+.three .size-1 {
+  padding: 30px;
+  height: 200px;
+  background-color: rgb(80, 71, 71);
+  grid-area: texte;
 }
-.one .column.size-4 {
-  grid-column: span 4;
-}
-@media (max-width: 920px) {
-  .one .column.size-4 {
-    grid-column: span 4;
-  }
+.three .size-4 {
+  padding: 30px;
+  height: 200px;
+  background-color: rgb(190, 190, 190);
+  grid-area: img;
 }
 
 footer {

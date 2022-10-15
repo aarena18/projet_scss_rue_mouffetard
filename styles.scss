@@ -59,22 +59,56 @@ header {
 
 .one {
   display: grid;
-  grid-template-columns: repeat(4, 2fr);
-  gap: 2px;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas: "article articles";
 
-  .column {
-    padding: 12px;
-    border: 1px solid #777;
-    @for $i from 1 through 4 {
-      &.size-#{$i} {
-        grid-column: span #{$i};
-        @media (max-width: 920px) {
-          grid-column: span 4;
-        }
-      }
-    }
+  .size-2 {
+    height: 300px;
+    padding: 30px;
+    background-color: #777;
+    grid-area: article;
+  }
+  .size-3 {
+    padding: 30px;
+    background-color: rgb(190, 190, 190);
+    grid-area: articles;
   }
 }
+.two {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas: "article articles";
+
+  .size-2 {
+    height: 300px;
+    padding: 30px;
+    background-color: #777;
+    grid-area: articles;
+  }
+  .size-3 {
+    padding: 30px;
+    background-color: rgb(190, 190, 190);
+    grid-area: article;
+  }
+}
+.three {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: "texte img";
+  .size-1 {
+    padding: 30px;
+    height: 200px;
+    background-color: rgb(80, 71, 71);
+    grid-area: texte;
+  }
+  .size-4 {
+    padding: 30px;
+    height: 200px;
+    background-color: rgb(190, 190, 190);
+    grid-area: img;
+  }
+}
+
 footer {
   background: rgba(255, 255, 255, 0.8);
   display: flex;
