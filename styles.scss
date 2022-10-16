@@ -110,23 +110,54 @@ header {
 }
 
 footer {
-  background: rgba(255, 255, 255, 0.8);
+  background: #26272b;
+  width: auto;
+  height: 200px;
   display: flex;
-  justify-content: space-between;
-  padding: 16px 32px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 0 20px;
+  img {
+    height: 40px;
+    width: 40px;
+  }
+  .line {
+    width: 80%;
+    height: 0.01rem;
+    background-color: #737373;
+  }
+  .logo-f {
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 0 20px;
+  }
 
   ul {
     display: contents;
     list-style: none;
-    gap: 16px;
-
+    gap: 10px;
+    h4 {
+      color: #fff;
+      text-transform: uppercase;
+    }
     a {
-      color: black;
+      color: #737373;
       text-decoration: none;
 
       &:hover {
         color: rgb(63, 59, 78);
       }
+    }
+    p {
+      color: #929292;
     }
   }
 }
