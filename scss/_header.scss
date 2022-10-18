@@ -1,0 +1,35 @@
+header {
+  width: 100%;
+  position: absolute;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    width: 100%;
+
+    .title {
+      font-size: 30px;
+      color: #fff;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 60px;
+      padding: inherit;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: medium;
+        font-weight: 500;
+
+        &:hover {
+          color: #818a91;
+        }
+      }
+    }
+  }
+}
