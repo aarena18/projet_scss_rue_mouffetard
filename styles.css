@@ -29,66 +29,6 @@ header .nav ul a:hover {
   color: #818a91;
 }
 
-#burger {
-  height: 100px;
-  width: 100%;
-  position: absolute;
-  display: flex;
-  flex-flow: column-reverse;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 60px;
-}
-#burger a {
-  color: #fff;
-  font-size: 10px;
-}
-
-/* MENU */
-#menu {
-  position: relative;
-}
-#menu a {
-  font-size: 20px;
-}
-#menu i {
-  padding-right: 8px;
-  transition: 0.2s;
-}
-
-.sousMenu {
-  width: 60px;
-  background-color: #26272b;
-  border-radius: 2px;
-  padding: 30px 90px;
-  position: absolute;
-  right: 0;
-  margin: 0;
-  display: none;
-}
-.sousMenu a {
-  color: rgba(137, 137, 137, 0.067);
-  line-height: 70px;
-  font-weight: 300;
-  transition: all 0.5s ease-in-out;
-}
-
-#menu .sousMenu a:hover {
-  color: #737373;
-  padding-left: 5px;
-}
-
-#menu:hover .sousMenu {
-  display: block;
-}
-
-#menu:hover .fas {
-  transform: rotate(-90deg);
-  padding-right: 0;
-  padding-bottom: 5px;
-  padding-left: 5px;
-}
-
 /* BANNER */
 .banner {
   width: 100%;
@@ -138,7 +78,7 @@ header {
 }
 
 body {
-  background-color: rgb(63, 59, 78);
+  background-color: #2f3035;
 }
 @media screen and (max-width: 900px) {
   body {
@@ -197,6 +137,42 @@ body {
   height: 200px;
   background-color: rgb(190, 190, 190);
   grid-area: img;
+}
+
+#timeline {
+  background-image: url(../img/vieux-mouf.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 10rem 2rem 8rem 2rem;
+  color: #fff;
+}
+
+#timeline_2 {
+  background-image: url(../img/mouf1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 10rem 2rem 8rem 2rem;
+  color: #fff;
+}
+
+#timeline_3 {
+  background-image: url(../img/mouf2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 10rem 2rem 8rem 2rem;
+  color: #fff;
+}
+
+#timeline_4 {
+  background-image: url(../img/mouf3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 10rem 2rem 8rem 2rem;
+  color: #fff;
 }
 
 footer {
