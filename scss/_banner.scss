@@ -1,0 +1,40 @@
+/* BANNER */
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/vieux-mouf.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 32px;
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+/* FILTRE BC-IMG BANNER */
+.banner::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #26272b;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.6;
+}
+
+h1,
+.banner p,
+header {
+  z-index: 1;
+}

@@ -1,0 +1,57 @@
+#burger {
+  height: 9rem;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  a {
+    color: #fff;
+    font-size: 2.2rem;
+  }
+  /* MENU */
+  #menu {
+    position: relative;
+    a {
+      font-size: 1.8rem;
+    }
+    .sousMenu {
+      width: 18rem;
+      background-color: #fff;
+      border-radius: 0.3rem;
+      padding: 2.5rem 3rem;
+      position: absolute;
+      right: 0;
+      margin: 0;
+      display: none;
+      a {
+        color: rgb(133, 133, 133);
+        line-height: 4rem;
+        font-size: 1.6rem;
+        font-weight: 300;
+        transition: all 0.5s ease-in-out;
+        :hover {
+          color: rgb(133, 133, 133);
+          padding-left: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+#menu:hover .sousMenu {
+  display: block;
+}
+
+#menu i {
+  padding-right: 0.5rem;
+  transition: 0.2s;
+}
+
+#menu:hover .fas {
+  transform: rotate(-90deg);
+  padding-right: 0;
+  padding-bottom: 0.3rem;
+  padding-left: 0.3rem;
+}

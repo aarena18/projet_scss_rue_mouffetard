@@ -1,8 +1,3 @@
-@use "mixins";
-body {
-  border-color: aquamarine;
-}
-
 /* SECTIONS GRID*/
 .one {
   display: grid;
@@ -34,7 +29,7 @@ body {
   }
   .size-3 {
     padding: 30px;
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(114, 41, 41);
     grid-area: article;
   }
 }
@@ -55,5 +50,3 @@ body {
     grid-area: img;
   }
 }
-/* FOOTER */
-@use "footer";
