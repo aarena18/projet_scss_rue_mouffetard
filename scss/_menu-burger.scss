@@ -1,57 +1,60 @@
 #burger {
-  height: 9rem;
+  height: 100px;
   width: 100%;
   position: absolute;
   display: flex;
+  flex-flow: column-reverse;
   justify-content: space-between;
-  align-items: center;
-  padding: 4rem;
+  align-items: flex-end;
+  padding: 60px;
   a {
     color: #fff;
-    font-size: 2.2rem;
+    font-size: 10px;
   }
-  /* MENU */
-  #menu {
-    position: relative;
-    a {
-      font-size: 1.8rem;
-    }
-    .sousMenu {
-      width: 18rem;
-      background-color: #fff;
-      border-radius: 0.3rem;
-      padding: 2.5rem 3rem;
-      position: absolute;
-      right: 0;
-      margin: 0;
-      display: none;
-      a {
-        color: rgb(133, 133, 133);
-        line-height: 4rem;
-        font-size: 1.6rem;
-        font-weight: 300;
-        transition: all 0.5s ease-in-out;
-        :hover {
-          color: rgb(133, 133, 133);
-          padding-left: 0.9rem;
-        }
-      }
-    }
+}
+
+/* MENU */
+
+#menu {
+  position: relative;
+  a {
+    font-size: 20px;
   }
+  i {
+    padding-right: 8px;
+    transition: 0.2s;
+  }
+}
+
+.sousMenu {
+  width: 60px;
+  background-color: #26272b;
+  border-radius: 2px;
+  padding: 30px 90px;
+  position: absolute;
+  right: 0;
+  margin: 0;
+  display: none;
+  a {
+    color: rgba(137, 137, 137, 0.067);
+    line-height: 70px;
+    font-weight: 300;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+#menu .sousMenu a:hover {
+  color: #737373;
+  padding-left: 5px;
 }
 
 #menu:hover .sousMenu {
   display: block;
 }
 
-#menu i {
-  padding-right: 0.5rem;
-  transition: 0.2s;
-}
-
 #menu:hover .fas {
   transform: rotate(-90deg);
   padding-right: 0;
-  padding-bottom: 0.3rem;
-  padding-left: 0.3rem;
+  padding-bottom: 5px;
+  padding-left: 5px;
 }
