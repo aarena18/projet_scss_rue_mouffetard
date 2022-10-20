@@ -8,9 +8,12 @@
   article {
     width: 500px;
     margin: 50px;
-    background-color: #fff;
+    border-radius: 50px;
+    background: #2f3035;
+    box-shadow: inset 32px 32px 50px #28292d, inset -32px -32px 50px #36373d;
     img {
       width: 100%;
+      border-radius: 50px 50px 0 0;
     }
   }
   .card-sub-t {
@@ -32,23 +35,21 @@
     font-size: 35px;
     line-height: 42px;
     padding: 0 0 24px 0;
-    color: #cecbcb;
+    color: #fff;
     font-weight: 600;
     text-align: center;
   }
-  .cards-desc {
+  .card-sub-t {
+    font-size: 18px;
     color: #cecbcb;
-    text-align: justify;
-    font-weight: 300;
-    line-height: 40px;
   }
 }
-.titre::after {
+.Titre::after {
   content: "";
   display: block;
   width: 50%;
   height: 2px;
-  background-color: #cecbcb;
+  background-color: #818a91;
   margin: 0 auto;
   margin-top: 24px;
 }
@@ -56,14 +57,16 @@
 /* BUTTON */
 
 .button {
-  margin-top: 72px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   transition: transform 0.5s;
   a {
     border: 3px solid #cecbcb;
     padding: 8px 45px;
     text-transform: uppercase;
-    color: #2b697a;
+    color: #818a91;
     transition: background-color 0.5s;
+    text-decoration: none;
   }
 }
 
