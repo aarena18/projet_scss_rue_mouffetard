@@ -1,32 +1,64 @@
-/*#timeline {
-  background-image: url(../img/vieux-mouf.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  padding: 10rem 2rem 8rem 2rem;
-  color: #fff;
+.timeline {
+  position: relative;
+  width: 600px;
+  margin: 150px auto 0 auto;
+  .text-wrapper {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    box-sizing: border-box;
+    margin: 50px 0;
+  }
+  .left {
+    left: 0;
+  }
+  .right {
+    left: 50%;
+  }
+  .text-time {
+    padding: 15px 15px 15px 17px;
+    background-color: #fff;
+    border-radius: 4px;
+    .sur-titre {
+      color: gray;
+      font-weight: 300;
+      font-size: 35px;
+      margin-top: 2px;
+    }
+    .date {
+      text-transform: uppercase;
+      font-size: 14px;
+      color: black;
+      letter-spacing: 1px;
+    }
+    .history {
+      color: gray;
+      font-weight: 300;
+      font-size: 18px;
+      margin-top: 2px;
+    }
+  }
 }
-#timeline_2 {
-  background-image: url(../img/mouf1.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  padding: 10rem 2rem 8rem 2rem;
-  color: #fff;
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: rgb(129, 42, 42);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
 }
-#timeline_3 {
-  background-image: url(../img/mouf2.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  padding: 10rem 2rem 8rem 2rem;
-  color: #fff;
+
+.text-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  background-color: rgb(216, 24, 24);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
 }
-#timeline_4 {
-  background-image: url(../img/mouf3.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  padding: 10rem 2rem 8rem 2rem;
-  color: #fff;
-}*/
