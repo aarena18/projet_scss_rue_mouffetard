@@ -29,6 +29,11 @@ header .nav ul a:hover {
   color: #818a91;
 }
 
+.desc {
+  height: 300px;
+  width: 100%;
+}
+
 /* BANNER */
 .banner {
   width: 100%;
@@ -89,21 +94,21 @@ body {
 /* SECTIONS GRID*/
 .one {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 3fr 2fr;
   grid-template-areas: "article articles";
 }
 .one .size-2 {
-  height: 300px;
+  height: 200px;
   padding: 30px;
-  background-color: #777;
-  background-image: url(../img/resto-1.jpg);
-  background-size: cover;
+  background-color: rgb(190, 190, 190);
   grid-area: article;
 }
 .one .size-3 {
   padding: 30px;
   background-color: rgb(190, 190, 190);
   grid-area: articles;
+  background-image: url(../img/marche1.png);
+  background-size: cover;
 }
 
 .two {
@@ -112,14 +117,34 @@ body {
   grid-template-areas: "article articles";
 }
 .two .size-2 {
-  height: 300px;
+  height: 500px;
   padding: 30px;
-  background-color: #777;
+  background-color: #26272b;
   grid-area: articles;
+}
+.two .size-2 .title-resto {
+  color: #fff;
+  font-size: 35px;
+  line-height: 42px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 130px;
+}
+.two .size-2 .text-resto {
+  font-size: 18px;
+  line-height: 31px;
+  color: rgb(203, 202, 202);
+  font-weight: 300;
+  text-align: center;
 }
 .two .size-3 {
   padding: 30px;
-  background-color: rgb(114, 41, 41);
+  background-color: #26272b;
+  background-image: url(../img/resto-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   grid-area: article;
 }
 
@@ -133,7 +158,6 @@ body {
   height: 300px;
   background-color: rgb(80, 71, 71);
   background-image: url(../img/marche-mouf.jpeg);
-  background-size: cover;
   grid-area: texte;
 }
 .three .size-4 {
