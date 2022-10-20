@@ -8,6 +8,6 @@
 body {
   background-color: #2f3035;
   @include mixins.breakpoint(900px) {
-    background-color: #121212;
+    background-color: #2f3035;
   }
 }
