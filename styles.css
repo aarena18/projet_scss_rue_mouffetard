@@ -75,6 +75,81 @@ header {
   z-index: 1;
 }
 
+/* SECTION cards */
+#cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+#cards article {
+  width: 500px;
+  margin: 50px;
+  background-color: #fff;
+}
+#cards article img {
+  width: 100%;
+}
+#cards .card-sub-t {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* TEXTE */
+.contentcards {
+  padding: 5px;
+}
+.contentcards div {
+  text-align: center;
+}
+.contentcards .Titre {
+  text-transform: uppercase;
+  font-size: 35px;
+  line-height: 42px;
+  padding: 0 0 24px 0;
+  color: #cecbcb;
+  font-weight: 600;
+  text-align: center;
+}
+.contentcards .cards-desc {
+  color: #cecbcb;
+  text-align: justify;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+.titre::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: #cecbcb;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+/* BUTTON */
+.button {
+  margin-top: 72px;
+  transition: transform 0.5s;
+}
+.button a {
+  border: 3px solid #cecbcb;
+  padding: 8px 45px;
+  text-transform: uppercase;
+  color: #2b697a;
+  transition: background-color 0.5s;
+}
+
+.button a:hover {
+  background-color: #cecbcb;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
 * {
   margin: 0;
   padding: 0;
