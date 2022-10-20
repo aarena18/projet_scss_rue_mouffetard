@@ -1,7 +1,19 @@
+.histoire {
+  background-color: #e0e0e0;
+} /*
+.img1 {
+  background-image: url(../img/mouf3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 10rem 2rem 8rem 2rem;
+}*/
+
 .timeline {
   position: relative;
-  width: 600px;
+  width: 800px;
   margin: 150px auto 0 auto;
+  padding-bottom: 150px;
   .text-wrapper {
     padding: 10px 40px;
     position: relative;
@@ -18,25 +30,29 @@
   }
   .text-time {
     padding: 15px 15px 15px 17px;
-    background-color: #fff;
-    border-radius: 4px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 32px 32px 50px #d0d0d0, -32px -32px 50px #f0f0f0;
     .sur-titre {
-      color: gray;
+      color: #2b697a;
       font-weight: 300;
       font-size: 35px;
       margin-top: 2px;
+      text-align: center;
     }
     .date {
       text-transform: uppercase;
-      font-size: 14px;
-      color: black;
+      font-size: 15px;
+      color: #2f3035;
       letter-spacing: 1px;
+      text-align: center;
     }
     .history {
-      color: gray;
+      color: #2f3035;
       font-weight: 300;
       font-size: 18px;
       margin-top: 2px;
+      text-align: justify;
     }
   }
 }
@@ -44,21 +60,37 @@
   content: "";
   position: absolute;
   width: 6px;
-  background-color: rgb(129, 42, 42);
+  background-color: #818a91;
   top: 0;
   bottom: 0;
   left: 50%;
   margin-left: -3px;
 }
 
-.text-wrapper::after {
+.left::after {
   content: "";
   position: absolute;
   width: 20px;
   height: 20px;
   right: -10px;
-  background-color: rgb(216, 24, 24);
+  background-color: #f2f2f2;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
+}
+
+.right::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -10px;
+  background-color: #f2f2f2;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+sup {
+  text-transform: lowercase;
 }
