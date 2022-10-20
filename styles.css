@@ -96,6 +96,8 @@ body {
   height: 300px;
   padding: 30px;
   background-color: #777;
+  background-image: url(../img/resto-1.jpg);
+  background-size: cover;
   grid-area: article;
 }
 .one .size-3 {
@@ -128,13 +130,15 @@ body {
 }
 .three .size-1 {
   padding: 30px;
-  height: 200px;
+  height: 300px;
   background-color: rgb(80, 71, 71);
+  background-image: url(../img/marche-mouf.jpeg);
+  background-size: cover;
   grid-area: texte;
 }
 .three .size-4 {
   padding: 30px;
-  height: 200px;
+  height: 300px;
   background-color: rgb(190, 190, 190);
   grid-area: img;
 }
